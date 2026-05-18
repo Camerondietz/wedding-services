@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>RSVP — Avery &amp; Sam · October 17, 2026</title>
+<meta name="description" content="Reply for Avery & Sam's wedding by September 1, 2026.">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28' font-family='serif' font-style='italic'%3EA%26S%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav" style="position: relative;">
+    <a class="couple-mark" href="index.html">A <span class="script" style="color: var(--color-accent);">&amp;</span> S</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <ul id="primary-nav" class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="details.html">Details</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="registry.html">Registry</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="rsvp.html" class="btn btn-primary" style="padding: 0.5rem 1rem;">RSVP</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <section style="padding-top: clamp(3rem, 8vw, 5.5rem); padding-bottom: 0;">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Please reply</span>
+        <h1 style="font-size: clamp(2.4rem, 6vw, 4rem);">RSVP</h1>
+        <p>By September 1, 2026. One form per guest, please — your plus-one can submit their own.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: clamp(1rem, 3vw, 2rem);">
+    <div class="container">
+      <div class="form-card">
+        <form id="rsvp-form" novalidate>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="first">First name</label>
+              <input id="first" name="first" type="text" autocomplete="given-name" required>
+            </div>
+            <div class="field">
+              <label for="last">Last name</label>
+              <input id="last" name="last" type="text" autocomplete="family-name" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label>Will you be there?</label>
+            <div class="radio-row">
+              <label><input type="radio" name="attending" value="yes" required> Joyfully yes</label>
+              <label><input type="radio" name="attending" value="no"> Sadly no</label>
+            </div>
+          </div>
+
+          <!-- Conditional fields — shown only when attending -->
+          <div data-if-attending style="display: none;">
+            <div class="field">
+              <label for="meal">Meal preference</label>
+              <select id="meal" name="meal">
+                <option value="">— Select —</option>
+                <option value="chicken">Roast chicken</option>
+                <option value="fish">Grilled fish</option>
+                <option value="veg">Seasonal vegetable plate</option>
+                <option value="kids">Kids' meal</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="dietary">Allergies or dietary notes</label>
+              <input id="dietary" name="dietary" type="text" placeholder="e.g. gluten-free, no shellfish">
+            </div>
+
+            <div class="field">
+              <label>Bringing a plus-one?</label>
+              <div class="radio-row">
+                <label><input type="radio" name="plus_one" value="yes"> Yes</label>
+                <label><input type="radio" name="plus_one" value="no" checked> Just me</label>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="plus_one_name">Plus-one's name (if yes)</label>
+              <input id="plus_one_name" name="plus_one_name" type="text">
+            </div>
+
+            <div class="field">
+              <label>Need shuttle from the host hotel?</label>
+              <div class="radio-row">
+                <label><input type="radio" name="shuttle" value="yes"> Yes please</label>
+                <label><input type="radio" name="shuttle" value="no" checked> Got it covered</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="song">Song that gets you on the dance floor (optional)</label>
+            <input id="song" name="song" type="text" placeholder="Artist — Title">
+          </div>
+
+          <div class="field">
+            <label for="note">A note for us (optional)</label>
+            <textarea id="note" name="note" placeholder="Anything you'd like us to know"></textarea>
+          </div>
+
+          <!-- Honeypot -->
+          <div style="position: absolute; left: -9999px;" aria-hidden="true">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send RSVP</button>
+
+          <div id="rsvp-msg" class="form-msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="couple-mark">Avery <span class="script" style="color: var(--color-accent);">&amp;</span> Sam</span>
+    <p>17 October 2026 · Austin, Texas</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

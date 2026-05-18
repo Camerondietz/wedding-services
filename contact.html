@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Request a Quote — Wedding Websites or Bridal Waxing | Velvet &amp; Vow Austin</title>
+<meta name="description" content="Tell us about your wedding. Request a quote for an Austin wedding website, bridesmaids facial waxing, or both. One business-day response.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://example.com/contact.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Request a Quote — Velvet &amp; Vow">
+<meta property="og:description" content="Tell us about your day — we respond within one business day.">
+<meta property="og:url" content="https://example.com/contact.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='28' font-family='serif'%3EV%26%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container nav" style="position: relative;">
+    <a class="brand" href="index.html">Velvet <span>&amp;</span> Vow</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <ul id="primary-nav" class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services/web-design.html">Websites</a></li>
+      <li><a href="services/facial-waxing.html">Waxing</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="contact.html" class="btn btn-primary" style="padding: 0.55rem 1.1rem;">Request</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <section style="padding-top: clamp(3rem, 7vw, 5rem); padding-bottom: 0;">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Contact</span>
+        <h1 style="margin-bottom: 0.4rem;">Tell us about the day.</h1>
+        <p>Pick one or both services. We respond within one business day with availability and a tailored quote.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: clamp(1rem, 3vw, 2rem);">
+    <div class="container">
+      <div class="form-wrap">
+        <form id="request-form" novalidate>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Your name <span aria-hidden="true" style="color: var(--color-error);">*</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email <span aria-hidden="true" style="color: var(--color-error);">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="phone">Phone (optional)</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="wedding_date">Wedding or event date</label>
+              <input id="wedding_date" name="wedding_date" type="date">
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Which services are you interested in? <span aria-hidden="true" style="color: var(--color-error);">*</span></label>
+            <div class="checks">
+              <label><input type="checkbox" name="services" value="website"> Wedding website</label>
+              <label><input type="checkbox" name="services" value="waxing"> Bridesmaids facial waxing</label>
+              <label><input type="checkbox" name="services" value="both"> Both / not sure yet</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="party_size">Bridal party size (for waxing)</label>
+              <input id="party_size" name="party_size" type="number" min="0" max="30" placeholder="e.g. 6">
+            </div>
+            <div class="field">
+              <label for="venue">Venue or city (for waxing on-site)</label>
+              <input id="venue" name="venue" type="text" placeholder="e.g. Driftwood, TX">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Tell us about your wedding</label>
+            <textarea id="message" name="message" placeholder="Vibe, must-haves, anything you're stuck on…"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="referral">How did you hear about us?</label>
+            <select id="referral" name="referral">
+              <option value="">— Select —</option>
+              <option value="search">Search engine</option>
+              <option value="instagram">Instagram</option>
+              <option value="friend">Friend or planner</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Honeypot — bots fill, humans don't see -->
+          <div style="position: absolute; left: -9999px;" aria-hidden="true">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send request</button>
+
+          <div id="form-msg" class="form-msg" role="status" aria-live="polite"></div>
+
+          <p style="margin: 1rem 0 0; font-size: 0.85rem; color: var(--color-text-muted);">
+            We use this info only to respond to your request. No marketing list, no third-party sharing.
+          </p>
+        </form>
+      </div>
+
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <p style="margin-bottom: 0;">Prefer email? <a href="mailto:hello@example.com">hello@example.com</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Velvet &amp; Vow</div>
+        <p>Wedding websites and bridesmaids facial waxing, based in Austin, Texas. Independently owned.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services/web-design.html">Wedding Websites</a></li>
+          <li><a href="services/facial-waxing.html">Bridesmaids Waxing</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+          <li>Austin, TX</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Velvet &amp; Vow. All rights reserved.</span>
+      <span>Made with care in Austin.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
